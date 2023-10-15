@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7bed9f;
+}
+
+header {
+    width: 100vw;
+    line-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    background-color: #20bf6b;
+}
+
+header h1 {
+    font-size: 2.2em;
+    letter-spacing: 15px;
+    text-shadow: 0 1px 0 #efefef,
+        0 2px 0 #efefef,
+        0 3px 0 #efefef,
+        0 4px 0 #efefef,
+        0 30px 5px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+.game_area {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 400px; /* Added max-width for responsiveness */
+    height: auto; /* Adjusted height for responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2ed573;
+    box-shadow: 0 8px 6px -6px black;
+    flex-direction: column;
+    font-family: 'Source Sans 3', sans-serif;
+    padding: 1rem; /* Added padding for spacing on smaller screens */
+}
+
+section input {
+    width: 80%; /* Adjusted width for responsiveness */
+    max-width: 300px; /* Added max-width for responsiveness */
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #dffdfb;
+    color: black;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+section .msg {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+button {
+    font-size: 1.1rem !important;
+    outline: none !important;
+    border: #2f3542 !important;
+    text-decoration: none !important;
+    margin-top: 10px !important;
+    color: #eb4d4b !important;
+}
+
+button.btn {
+    font-weight: 600 !important;
+    padding: 1rem 2rem !important;
+    background-color: white !important;
+    text-transform: uppercase !important;
+    transition: all 0.5s ease-in-out !important;
+    transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95) !important;
+    word-spacing: 5px;
+}
+
+button.btn:hover,
+button.btn:focus,
+button.btn:active {
+    letter-spacing: 0.125rem;
+    word-spacing: 0.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    section {
+        /* height: auto; */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        letter-spacing: 10px;
+    }
+}
